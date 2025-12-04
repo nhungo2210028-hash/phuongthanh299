@@ -1,77 +1,149 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHƯƠNG THANH</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hồ Sơ Phương Thanh</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: url('backpthanh.jpg');
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+    }
 
-    <style>
-        body {
-            background-image: url("backpthanh.jpg");
-            background-size: 100% 100%;
-            background-position: center;
-            background-repeat: no-repeat;
-            min-height: 100vh; 
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+    .card {
+        width: 70%;
+        max-width: 950px;
+        background: rgba(255,255,255,0.9);
+        margin: 50px auto;
+        border-radius: 10px;
+        padding: 30px;
+        display: flex;
+        gap: 20px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        border: 3px solid #627d98;
+    }
 
-        .avatar {
-            width: 120px;
-            height: 120px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 3px solid #bcdcff;
-            display: block;
-            margin: 0 auto 10px auto;
-        }
+    .profile-img {
+        width: 260px;
+        height: 260px;
+        border-radius: 10px;
+        object-fit: cover;
+        border: 4px solid #bfcbe2;
+    }
 
-        .card {
-            width: 320px;
-            background: rgba(255, 255, 255, 0.25);
-            padding: 20px;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-            margin: 40px auto;
-            text-align: center;
-        }
+    .right-box {
+        width: 260px;
+        text-align: center;
+    }
 
-        h1 {
-            font-size: 30px;
-            color: white;
-            text-shadow: 0 0 10px #00aaff,
-                         0 0 20px #00aaff,
-                         0 0 30px #00aaff;
-            margin-bottom: 10px;
-        }
+    .name {
+        margin-top: 15px;
+        font-size: 26px;
+        font-weight: 700;
+        color: #2a3d55;
+    }
 
-        .subtitle {
-            background-color: #9387AB;
-            color: white;
-            padding: 10px;
-            border-radius: 10px;
-        }
+    /* sửa đúng cú pháp cho .role (giữ kiểu như yêu cầu trước) */
+    .role {
+        font-size: 20px;      /* Tăng kích thước chữ */
+        color: #444;
+        margin-top: 12px;     /* Tạo khoảng cách với tên */
+        font-weight: 600;
+    }
 
-        .container {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            margin-top: 40px;
-        }
-    </style>
+    .mission {
+        margin-top: 11px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #444;
+    }
+
+    .left-box {
+        flex: 1;
+    }
+
+    .section-title {
+        margin-top: 20px;
+        font-size: 22px;
+        font-weight: 700;
+        color: #1c3453;
+    }
+
+    .info-list p {
+        margin: 6px 0;
+        font-size: 17px;
+        color: #333;
+    }
+
+    .space {
+        height: 25px;
+    }
+
+    .back-btn {
+        display: inline-block;
+        margin: 25px 0 0 50px;
+        padding: 10px 20px;
+        background: #2a4d69;
+        color: white;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .back-btn:hover {
+        background: #1d3550;
+    }
+
+    /* ----- CHỈ ĐỔI PHÔNG CHO KHỐI LIÊN HỆ ----- */
+    .contact-info {
+        font-family: Georgia, serif; /* phông mới cho Liên hệ */
+    }
+</style>
 </head>
 
 <body>
 
-    <div class="card">
-        <img src="avtpthanh.jpg" class="avatar">
-        <h1>VÕ THỊ PHƯƠNG THANH</h1>
+<a href="https://nhungo2210028-hash.github.io/uuujij/" class="back-btn">← Quay về trang chủ</a>
 
-        <div class="subtitle">
-            <p>Seaweedaholic🐠🌸🌊</p>
+<div class="card">
+
+    <div class="left-box">
+        <div class="section-title">INFORMATION</div>
+        <div class="info-list">
+            <p><b>📅Ngày sinh:</b> 29/9/2008</p>
+            <p><b>♎️Cung hoàng đạo:</b> Thiên Bình</p>
+            <p><b>🎹Sở thích:</b> Nghe nhạc, Xem Onepiece, Xem phim kinh dị</p>
+            <p><b>🧸Nghệ sĩ/ Nhân vật yêu thích:</b> JENNIE, Luffy </p>
+            <p><b>🎓Nguyện vọng đại học:</b> Tiếng Anh Thương Mại - UEH </p>
+            <p><b>🔑Châm ngôn:</b> Go with the flow </p>
+        </div>
+
+        <div class="space"></div>
+
+        <div class="section-title">CONTACT</div>
+        <!-- thêm class contact-info chỉ cho khối liên hệ -->
+        <div class="info-list contact-info">
+            <p><b>💌Email:</b> phuongthanh290908@gmail.com </p>
+            <p><b>📞Phone:</b> 0763991196 </p>
         </div>
     </div>
+
+    <div class="right-box">
+        <img src="avtpthanh.jpg" class="profile-img" alt="profile">
+        <div class="name">Võ Thị Phương Thanh</div>
+        <div class="role"> Thành Viên </div>
+        <div class="mission">Nhiệm vụ : Thiết kế Web Cá Nhân, Soạn Nội Dung Báo Cáo, Canva</div>
+    </div>
+
+</div>
+
+</body>
+</html>
+
 
 </body>
 </html>
